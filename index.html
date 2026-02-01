@@ -1,8 +1,50 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-    </head>
-    <body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
-        <h1 class="text-3xl font-bold text-center text-gray-800">OFEC Test</h1>
-    </body>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OFEC - Loading...</title>
+
+    <style>
+        body {
+            background-color: #1a1a1a;
+            /* Matches your dark nav bar */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            color: white;
+        }
+    </style>
+
+    <script>
+        (function () {
+            // 1. Check if a language preference is saved in the browser
+            const savedLanguage = localStorage.getItem('church_lang');
+
+            // 2. Define the paths to your specific language homepages
+            // Note: Since index.html is in the root, we go into pages/
+            const englishPath = "pages/en/home.html";
+            const arabicPath = "pages/ar/home.html";
+
+            // 3. Logic: Redirect based on cache, default to Arabic
+            if (savedLanguage === 'en') {
+                window.location.replace(englishPath);
+            } else {
+                // If it's 'ar' or if it's the user's first time (null)
+                window.location.replace(arabicPath);
+            }
+        })();
+    </script>
+</head>
+
+<body>
+    <div id="loader">
+        <p>جاري التحميل... / Loading...</p>
+    </div>
+</body>
+
 </html>
