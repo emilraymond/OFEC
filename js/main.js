@@ -24,6 +24,18 @@ async function loadLayout() {
         document.getElementById('navbar-placeholder').innerHTML = await navRes.text();
         document.getElementById('footer-placeholder').innerHTML = await footRes.text();
 
+        // --- NEW: Fix the links for GitHub Pages ---
+        if (base !== '') {
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                const href = link.getAttribute('href');
+                // If it starts with / but doesn't have the base yet, add it
+                if (href.startsWith('/') && !href.startsWith(base)) {
+                    link.setAttribute('href', base + href);
+                }
+            });
+        }
+
         // 1. Highlight the active page link
         highlightActiveLink();
 
@@ -34,8 +46,6 @@ async function loadLayout() {
         console.error("Error loading layout:", err);
     }
 }
-
-
 
 async function applyLanguage(lang) {
     const base = getBasePath();
