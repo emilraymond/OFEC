@@ -24,13 +24,14 @@ async function loadLayout() {
         document.getElementById('navbar-placeholder').innerHTML = await navRes.text();
         document.getElementById('footer-placeholder').innerHTML = await footRes.text();
 
-        // --- NEW: Fix the links for GitHub Pages ---
+        // --- FIXED: Fix links in both Navbar and Footer ---
         if (base !== '') {
-            const navLinks = document.querySelectorAll('.nav-link');
-            navLinks.forEach(link => {
+            // Target all links inside our dynamic placeholders
+            const links = document.querySelectorAll('#navbar-placeholder a, #footer-placeholder a');
+            links.forEach(link => {
                 const href = link.getAttribute('href');
-                // If it starts with / but doesn't have the base yet, add it
-                if (href.startsWith('/') && !href.startsWith(base)) {
+                // If it's an internal link starting with / and doesn't have the base yet
+                if (href && href.startsWith('/') && !href.startsWith(base)) {
                     link.setAttribute('href', base + href);
                 }
             });
