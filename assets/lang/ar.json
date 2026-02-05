@@ -1,6 +1,7 @@
 {
   "About_Us": "من نحن",
   "Activities": "النشاطات",
+  "All_Services": "جميع الاجتماعات",
   "Contact_Us": "اتصل بنا",
   "Footer_Links_Title": "روابط سريعة",
   "Footer_Mission": "نحن كنيسة تهدف إلى نشر المحبة والنعمة في مجتمعنا.",
@@ -11,9 +12,13 @@
   "History": "التاريخ",
   "Home": "الرئيسية",
   "Language": "English",
+  "Live_Stream": "البث المباشر (غير متاح)",
   "Mission": "الرسالة",
   "News": "الأخبار",
+  "Overview": "نظرة عامة",
   "Reflections": "تأملات",
+  "Sec_Services": "الاجتماعات الفرعية",
   "Services": "الاجتماعات",
-  "Vision": "الروئية"
+  "Vision": "الروئية",
+  "Series": "السلسلات"
 }

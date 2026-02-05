@@ -1,6 +1,7 @@
 {
   "About_Us": "About Us",
   "Activities": "Activities",
+  "All_Services": "All Services",
   "Contact_Us": "Contact Us",
   "Footer_Links_Title": "Quick Links",
   "Footer_Mission": "We are a church dedicated to sharing love and grace within our community.",
@@ -11,9 +12,13 @@
   "History": "History",
   "Home": "Home",
   "Language": "العربية",
+  "Live_Stream": "Live Stream (Unavailable)",
   "Mission": "Mission",
   "News": "News",
+  "Overview": "Overview",
   "Reflections": "Reflections",
+  "Sec_Services": "Secondary Services",
   "Services": "Services",
-  "Vision": "Vision"
+  "Vision": "Vision",
+  "Series": "Series"
 }
