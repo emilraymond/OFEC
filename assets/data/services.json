@@ -1,0 +1,101 @@
+[
+  {
+    "_comment": "1",
+    "id": "sunday-meeting",
+    "title_ar": "الاجتماع الأحد",
+    "title_en": "Sunday Service",
+    "brief_ar": "وقت للصلاة والعبادة والشركة الروحية كل أحد.",
+    "brief_en": "A time for prayer, worship, and fellowship every Sunday.",
+    "time_ar": "الأحد ٩ ص و ٧ م",
+    "time_en": "Sunday 9 AM and 7 PM",
+    "image": "../../assets/images/services/sunday.jpg"
+  },
+  {
+    "_comment": "2",
+    "id": "family-meeting",
+    "title_ar": "اجتماع الأسرة",
+    "title_en": "Family Meeting",
+    "brief_ar": "",
+    "brief_en": "",
+    "time_ar": "",
+    "time_en": "",
+    "image": "../../assets/images/services/family.jpg"
+  },
+  {
+    "_comment": "3",
+    "id": "prayer-meeting",
+    "title_ar": "اجتماع الصلاة",
+    "title_en": "Prayer Meeting",
+    "brief_ar": "",
+    "brief_en": "",
+    "time_ar": "الخميس ٧ م",
+    "time_en": "Tursday 7 PM",
+    "image": "../../assets/images/services/prayer.jpg"
+  },
+  {
+    "_comment": "4",
+    "id": "sunday_school-meeting",
+    "title_ar": "اجتماع مدارس الأحد",
+    "title_en": "Sunday School Meeting",
+    "brief_ar": "",
+    "brief_en": "",
+    "time_ar": "الجمعة ٤ م",
+    "time_en": "Friday 4 PM",
+    "image": "../../assets/images/services/sunday_school.jpg"
+  },
+  {
+    "_comment": "5",
+    "id": "middle_school-meeting",
+    "title_ar": "اجتماع إعدادي",
+    "title_en": "Middle School Meeting",
+    "brief_ar": "",
+    "brief_en": "",
+    "time_ar": "الجمعة ١١ ص",
+    "time_en": "Friday 11 AM",
+    "image": "../../assets/images/services/middle_school.jpg"
+  },
+  {
+    "_comment": "6",
+    "id": "high_school-meeting",
+    "title_ar": "اجتماع ثانوي",
+    "title_en": "High School Meeting",
+    "brief_ar": "",
+    "brief_en": "",
+    "time_ar": "الجمعة ٦ م",
+    "time_en": "Friday 6 PM",
+    "image": "../../assets/images/services/high_school.jpg"
+  },
+  {
+    "_comment": "7",
+    "id": "youth-meeting",
+    "title_ar": "اجتماع الشباب",
+    "title_en": "Youth Meeting",
+    "brief_ar": "مناقشات روحية وحياتية تهم جيل الشباب.",
+    "brief_en": "Spiritual and life discussions relevant to the youth.",
+    "time_ar": "السبت ٦ م",
+    "time_en": "Saturday 6 PM",
+    "image": "../../assets/images/services/youth.jpg"
+  },
+  {
+    "_comment": "8",
+    "id": "foreigners-meeting",
+    "title_ar": "اجتماع المغتربين",
+    "title_en": "Foreigners Meeting",
+    "brief_ar": "",
+    "brief_en": "",
+    "time_ar": "",
+    "time_en": "",
+    "image": "../../assets/images/services/foreigners.jpg"
+  },
+  {
+    "_comment": "9",
+    "id": "ladies-meeting",
+    "title_ar": "اجتماع السيدات",
+    "title_en": "Ladies Meeting",
+    "brief_ar": "",
+    "brief_en": "",
+    "time_ar": "الأربعاء ٦ م",
+    "time_en": "Wednesday 6 PM",
+    "image": "../../assets/images/services/ladies.jpg"
+  }
+]

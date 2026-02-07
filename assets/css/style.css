@@ -100,3 +100,27 @@ footer {
 
 /* ================= */
 
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.service-card h5 {
+    transition: color 0.3s ease;
+}
+
+.service-card:hover h4 {
+    color: #b59410 !important; /* Church Gold highlight */
+}
+.service-card:hover h6 {
+    color: #b59410 !important; /* Church Gold highlight */
+}
+.service-card:hover p {
+    color: #b59410 !important; /* Church Gold highlight */
+}
