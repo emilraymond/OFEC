@@ -149,7 +149,7 @@ async function loadContactData() {
         const infoAddress = document.getElementById('info-address');
         if (infoPhone) {
             infoAddress.innerText = (currentLang === 'ar') ? data.address_location_ar : data.address_location_en
-            // infoAddress.href = (currentLang === 'ar') ? data.address_location_ar : data.address_location_en
+            infoAddress.href = data.address_URL
         }
 
         // Populate Social Links
