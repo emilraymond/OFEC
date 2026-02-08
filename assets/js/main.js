@@ -22,10 +22,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     }
 });
 
-// document.addEventListener('mouseout', function (event) {
-//     alert(event);
-// });
-
 // document.addEventListener('click', function (event) {
 //     const navbarToggler = document.querySelector('.navbar-toggler');
 //     const navbarCollapse = document.querySelector('.navbar-collapse');
@@ -216,7 +212,6 @@ async function loadMeetings() {
         grid.innerHTML = meetings.map(service => `
             <div class="col">
                 <!-- <a href="service-details.html?id=${service.id}" class="text-decoration-none"> -->
-                <!-- <a class="text-decoration-none" onclick="alert('${lang === 'ar' ? service.title_ar : service.title_en}');"> -->
                     <div class="card h-100 border-0 shadow-sm theme-card">
                         <!-- <img src="${service.image}" class="card-img-top" alt="${service.id}" 
                              style="height: 200px; object-fit: cover;"> -->
@@ -258,7 +253,6 @@ async function loadNews() {
         grid.innerHTML = meetings.map(service => `
             <div class="col">
                 <!-- <a href="service-details.html?id=${service.id}" class="text-decoration-none"> -->
-                <!-- <a class="text-decoration-none" onclick="alert('${lang === 'ar' ? service.title_ar : service.title_en}');"> -->
                     <div class="card h-100 border-0 shadow-sm theme-card">
                         <!-- <img src="${service.image}" class="card-img-top" alt="${service.id}" 
                              style="height: 200px; object-fit: cover;"> -->
@@ -293,3 +287,34 @@ function goTo_tasbe7na() {
 
     }
 }
+
+/* ================= Calendar ================= */
+
+document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendar');
+
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        // initialView: 'dayGridMonth',
+        initialDate: '2021-04-07', // ToDo: Today
+        themeSystem: "bootstrap",
+        headerToolbar: {
+            left: 'prev next today',
+            right: 'title'
+            // right: ''
+        },
+        events: [
+            {
+                title: 'Long Event',
+                start: '2021-04-07',
+                end: '2021-04-10'
+            },
+            {
+                title: 'Click for Google',
+                url: 'http://google.com/',
+                start: '2021-04-28'
+            }
+        ]
+    });
+
+    calendar.render();
+});
